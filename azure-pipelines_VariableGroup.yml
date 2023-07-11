@@ -20,4 +20,4 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Host "Hello World"
-      Write-Host "this is build by ${env:USERNAME}"
+      Write-Host "this is build by ${env:USERNAME} and with password ${env:PASSWORD}"
