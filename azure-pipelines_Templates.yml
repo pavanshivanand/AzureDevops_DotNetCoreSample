@@ -6,9 +6,14 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'windows-latest'
-
-
-steps:
-- template: azure-pipelines.yml
+jobs:
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - template: include-npm-steps.yml  # Template reference
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - template: include-npm-steps.yml  # Template reference
