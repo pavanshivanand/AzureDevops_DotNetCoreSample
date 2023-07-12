@@ -11,4 +11,4 @@ pool:
 
 
 steps:
-- template: azure-pipelines_VariableGroup.yml
+- template: /azure-pipelines_VariableGroup.yml
