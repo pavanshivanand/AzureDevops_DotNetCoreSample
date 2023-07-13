@@ -46,7 +46,7 @@ stages:
 - stage: "DeploytoDevStage"
   dependsOn:"BuildStage"
   jobs:
-  - job: "BuildJob"
+  - job: "DeploytoDevJob"
     pool:
       vmImage: 'ubuntu-latest'
     steps:
